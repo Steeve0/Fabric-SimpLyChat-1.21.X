@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "simplychat",
+	"version": "${version}",
+	"name": "SimpLyChat",
+	"description": "A Chat Mod held together with chopsticks and tape",
+	"authors": [
+		"Steeve_"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/simplychat/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.steeve.simplychat.SimpLyChat"
+		],
+		"fabric-datagen": [
+			"net.steeve.simplychat.SimpLyChatDataGenerator"
+		],
+		"client": [
+			"net.steeve.simplychat.SimpLyChatClient"
+		]
+	},
+	"mixins": [
+		"simplychat.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
